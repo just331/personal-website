@@ -11,3 +11,10 @@ def index():
 
     return render_template('/index.html',
                            greeting=greeting)
+
+
+@app.route('/about', methods=['POST', 'GET'])
+def about():
+    title_text = 'About'
+    return render_template('/about.html',
+                           title_text=title_text)
