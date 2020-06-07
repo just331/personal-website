@@ -13,6 +13,7 @@ def index():
                            greeting=greeting)
 
 
+# About Me page
 @app.route('/about', methods=['POST', 'GET'])
 def about():
     title_text = 'About'
