@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    greeting = 'Welcome to My A.I. / Data Science Portfolio Website [Under Construction]'
+    greeting = 'Welcome to My A.I. / Data Science Portfolio Website [Under Construction!]'
 
     return render_template('/index.html',
                            greeting=greeting)
