@@ -19,3 +19,10 @@ def about():
     about = 'About me'
     return render_template('/about.html',
                            about=about)
+
+
+@app.route('/portfolio', methods=['POST', 'GET'])
+def portfolio():
+    port = 'Portfolio Page'
+    return render_template('/portfolio.html',
+                           port=port)
