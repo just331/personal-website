@@ -16,9 +16,9 @@ def index():
 # About Me page
 @app.route('/about', methods=['POST', 'GET'])
 def about():
-    about = 'About me'
+    about_me = 'About me'
     return render_template('/about.html',
-                           about=about)
+                           about=about_me)
 
 
 @app.route('/portfolio', methods=['POST', 'GET'])
