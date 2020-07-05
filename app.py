@@ -10,7 +10,9 @@ def index():
     greeting = 'Welcome to My A.I. / Data Science Portfolio Website [Under Construction!]'
 
     return render_template('/index.html',
-                           greeting=greeting)
+                           greeting=greeting,
+                           title="Data Science & Logic Programming",
+                           id="index")
 
 
 # About Me page
@@ -18,11 +20,15 @@ def index():
 def about():
     about_me = 'About me'
     return render_template('/about.html',
-                           about=about_me)
+                           about=about_me,
+                           title="About Me",
+                           id="about")
 
 
 @app.route('/portfolio', methods=['POST', 'GET'])
 def portfolio():
     port = 'Portfolio Page'
     return render_template('/portfolio.html',
-                           port=port)
+                           port=port,
+                           title="Portfolio",
+                           id="portfolio")
