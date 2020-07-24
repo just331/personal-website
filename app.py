@@ -11,7 +11,8 @@ def index():
 
     return render_template('/index.html',
                            greeting=greeting,
-                           title="Data Science & Logic Programming",
+                           title="Welcome to My Data Science & Logic Programming Portfolio Website [Under "
+                                 "Construction!]",
                            id="index")
 
 
