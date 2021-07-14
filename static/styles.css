@@ -5,41 +5,53 @@
     font-weight: bold;
 }
 
-#index-navbarbrand
+#navbar-color, #name-color
 {
-    color: #2CD4A7;
+    color: #FFF;
 }
 
-#portfolio-navbarbrand
+#navbar-color:hover
 {
-    color: #2FDEDB;
+    text-decoration: none;
+    color: #000;
 }
 
-#about-navbarbrand
-{
-    color: #33C6B8;
-}
-
-#index-nav-link:hover
+.index-navbar-custom
 {
     background-color: #2CD4A7;
 }
 
-#portfolio-nav-link:hover
+.portfolio-navbar-custom
 {
     background-color: #2FDEDB;
 }
 
-#about-nav-link:hover
+.about-navbar-custom
 {
     background-color: #33C6B8;
 }
 
+.navbar-toggler
+{
+    background-color: #FFF;
+}
+
+#btn-lang
+{
+    border: 2px solid;
+    border-color: #FFF;
+    color: #FFF;
+    font-weight: bold;
+}
+
 .title-color
 {
+    padding: 210px 0 80px;
     position: relative;
     z-index: 1;
     display: block;
+    height: 650px;
+    position: relative;
 }
 
 #index-title
@@ -59,43 +71,13 @@
 
 .container
 {
-    min-height:100%;
-    min-width:100%;
+    width:100%;
 }
 
-/* This is for debugging purposes to see the size of divs
+/*This is for debugging purposes to see the size of divs
 *{
- outline: 1px solid red;
-}
-*/
-
-.title-color
-{
-    height: 600px;
-    position: relative;
-}
-
-.title-container
-{
-    padding-left: 180px;
-    position: absolute;
-    bottom: 150px;
-    width: 100%;
-}
-
-@media (max-width: 480px) {
-    .title-container {
-      padding: 0 20px 0 20px;
-      margin:0;
-    }
-}
-
-@media (max-width: 780px) {
-    .title-container {
-      padding: 0 40px 0 40px;
-      margin:0;
-    }
-}
+    outline: 1px solid red;
+}*/
 
 .title-text
 {
@@ -103,6 +85,11 @@
     font-size: 25px;
     font-weight: bold;
     margin: 0;
+}
+
+.additional-margin
+{
+    padding-left: 90px;
 }
 
 .title-description
@@ -113,14 +100,14 @@
 
 .home-content
 {
-    margin: 40px 0 70px 0;
+    margin: 40px 0 60px 0;
 }
 
 .index-header
 {
     color: #2CD4A7;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -139,26 +126,29 @@
     text-decoration: none;
 }
 
-.index-link:hover
-{
-    text-decoration: none;
-    color: #2CD4A7;
-}
-
 .index-img
 {
-    padding-bottom: 5px;
-    min-height: 51px;
+    min-height: 60px;
+}
+
+.image
+{
+    padding: 15px;
 }
 
 .index-bottom
 {
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .portfolio-row
 {
-    margin: 30px 30px 30px 30px;
+    margin: 30px 0 30px 0;
+}
+
+.portfolio-text
+{
+    min-height: 150px;
 }
 
 .title-link
@@ -180,12 +170,16 @@
 .project-des
 {
     font-size: 14px;
-    min-height: 62px;
 }
 
 .skills
 {
     font-size: 12px;
+}
+
+.button-row
+{
+    margin-bottom: 80px;
 }
 
 .bold
@@ -219,6 +213,75 @@
     background-color: rgba(47,222,219,0.5);
     color: #000000;
 }
+
+@media (max-width: 576px) {
+    .title-color{
+        padding: 140px 0 80px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-color
+    {
+        padding: 150px 0 80px;
+    }
+    .portfolio-row
+    {
+        margin: 0px 10px 0px 10px;
+    }
+    .button-row
+    {
+        margin-bottom: 40px;
+    }
+    .index-bottom
+    {
+        margin-bottom: 60px;
+    }
+    .index-header
+    {
+        margin-bottom: 10px;
+    }
+    .index-img
+    {
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .additional-margin
+    {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-collapse
+    {
+        font-size: 18px;
+    }
+    .title-text
+    {
+        font-size: 28px;
+    }
+    .title-description
+    {
+        font-size: 18px;
+    }
+    .project-des
+    {
+        font-size: 16px;
+    }
+    .skills
+    {
+        font-size: 14px;
+    }
+    .portfolio-row
+    {
+        margin: 30px 60px 30px 60px;
+    }
+}
+
 
 .about-header
 {
@@ -401,6 +464,7 @@ h2.about-header
 .skill-cat
 {
     margin-top: 20px;
+    min-height: 50px;
 }
 
 .skill-bar
